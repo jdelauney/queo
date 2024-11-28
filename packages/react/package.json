@@ -1,7 +1,6 @@
 {
 	"name": "@taylux/react",
 	"version": "0.0.1",
-	"description": "",
 	"private": false,
 	"type": "module",
 	"main": "./dist/taylux.umd.js",
@@ -34,7 +33,7 @@
 		"clean": "rm -rf dist .turbo"
 	},
 	"keywords": [],
-	"author": "",
+	"author": "Sebastien",
 	"license": "MIT",
 	"devDependencies": {
 		"@types/react": "^18.3.12",
@@ -49,6 +48,14 @@
 	"peerDependencies": {
 		"react": "^18.3.1",
 		"react-dom": "^18.3.1"
-	}
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Sebastienpanda/taylux.git"
+	},
+	"bugs": {
+		"url": "https://github.com/Sebastienpanda/taylux/issues"
+	},
+	"homepage": "https://github.com/Sebastienpanda/taylux#readme",
+	"description": ""
 }
-
