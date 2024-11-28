@@ -1,6 +1,6 @@
 {
 	"name": "@queo/vue",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"type": "module",
 	"private": false,
 	"main": "./dist/taylux.umd.js",

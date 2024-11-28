@@ -23,13 +23,14 @@ export default defineConfig({
 		cssCodeSplit: false,
 		cssMinify: true,
 		rollupOptions: {
-			external: ['vue'],
+			external: ['vue', '@queo/core'],
 			output: [
 				{
 					format: 'es',
 					exports: 'named',
 					globals: {
 						vue: 'Vue',
+						'@queo/core': 'QueoCore',
 					},
 					assetFileNames: 'assets/[name][extname]',
 					preserveModulesRoot: 'src',
@@ -40,6 +41,7 @@ export default defineConfig({
 					exports: 'named',
 					globals: {
 						vue: 'Vue',
+						'@queo/core': 'QueoCore',
 					},
 					assetFileNames: 'assets/[name][extname]',
 				},

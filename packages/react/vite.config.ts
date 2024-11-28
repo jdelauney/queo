@@ -19,7 +19,7 @@ export default defineConfig({
 			fileName: (format) => `taylux.${format}.js`,
 		},
 		rollupOptions: {
-			external: ['react', 'react-dom'],
+			external: ['react', 'react-dom', '@queo/core'],
 			output: [
 				{
 					format: 'es',
@@ -27,6 +27,7 @@ export default defineConfig({
 					globals: {
 						react: 'React',
 						'react-dom': 'ReactDOM',
+						'@queo/core': 'QueoCore',
 					},
 					assetFileNames: 'assets/[name][extname]',
 				},
@@ -37,6 +38,7 @@ export default defineConfig({
 					globals: {
 						react: 'React',
 						'react-dom': 'ReactDOM',
+						'@queo/core': 'QueoCore',
 					},
 					assetFileNames: 'assets/[name][extname]',
 				},
