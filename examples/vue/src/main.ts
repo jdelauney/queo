@@ -1,5 +1,5 @@
-import '@tayluxui/core/src/styles/main.scss';
 import plugin from '@tayluxui/vue';
+import 'taylux-core/src/styles/main.scss';
 import { createApp } from 'vue';
 import App from './App.vue';
 

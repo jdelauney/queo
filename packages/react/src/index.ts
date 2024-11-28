@@ -1,2 +1,2 @@
-import '@tayluxui/core/src/styles/main.scss';
+import 'taylux-core/src/styles/main.scss';
 export { Button } from './components/Button/button';

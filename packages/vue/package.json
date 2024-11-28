@@ -1,5 +1,5 @@
 {
-	"name": "@tayluxui/vue",
+	"name": "taylux-vue",
 	"version": "0.0.1",
 	"type": "module",
 	"private": false,
@@ -37,7 +37,7 @@
 	"license": "MIT",
 	"dependencies": {
 		"vue": "^3.5.13",
-		"@tayluxui/core": "workspace:*"
+		"taylux-core": "workspace:*"
 	},
 	"peerDependencies": {
 		"vue": "^3.5.13"
