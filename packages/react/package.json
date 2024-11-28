@@ -1,5 +1,5 @@
 {
-	"name": "taylux-react",
+	"name": "@queo/react",
 	"version": "0.0.1",
 	"private": false,
 	"type": "module",
@@ -43,7 +43,7 @@
 	"dependencies": {
 		"react": "^18.3.1",
 		"react-dom": "^18.3.1",
-		"taylux-core": "workspace:*"
+		"@queo/core": "workspace:*"
 	},
 	"peerDependencies": {
 		"react": "^18.3.1",

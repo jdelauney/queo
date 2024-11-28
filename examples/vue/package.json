@@ -10,7 +10,7 @@
 	},
 	"dependencies": {
 		"vue": "^3.5.13",
-		"taylux-core": "workspace:*",
+		"@queo/core": "workspace:*",
 		"@tayluxui/vue": "workspace:*"
 	},
 	"devDependencies": {

@@ -1,4 +1,4 @@
-import 'taylux-core/src/styles/main.scss';
+import '@queo/core/src/styles/main.scss';
 import { App } from 'vue';
 import Button from './components/Button/Button.vue';
 

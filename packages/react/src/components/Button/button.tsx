@@ -1,4 +1,4 @@
-import { ButtonProps } from 'taylux-core/src/index';
+import { ButtonProps } from '@queo/core/src/index';
 
 export interface ReactButtonProps extends ButtonProps {
 	children?: React.ReactNode;
