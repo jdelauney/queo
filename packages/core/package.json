@@ -1,0 +1,15 @@
+{
+	"name": "@taylux/core",
+	"version": "0.0.1",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"lint": "eslint \"src/**/*.{ts}\" --fix",
+		"typecheck": "tsc --noEmit",
+		"clean": "rm -rf dist .turbo"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC"
+}
+
