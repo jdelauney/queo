@@ -1,20 +1,21 @@
 {
 	"name": "@taylux/react",
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"description": "",
+	"private": false,
 	"type": "module",
 	"main": "./dist/taylux.umd.js",
 	"module": "./dist/taylux.es.js",
 	"types": "./dist/types/index.d.ts",
 	"exports": {
 		".": {
+			"types": "./dist/types/index.d.ts",
 			"import": "./dist/taylux.es.js",
-			"require": "./dist/taylux.umd.js",
-			"types": "./dist/types/index.d.ts"
+			"require": "./dist/taylux.umd.js"
 		},
 		"./style.css": {
-			"import": "./dist/assets/style.css",
-			"require": "./dist/assets/style.css"
+			"import": "./dist/assets/react.css",
+			"require": "./dist/assets/react.css"
 		}
 	},
 	"files": [
@@ -50,3 +51,4 @@
 		"react-dom": "^18.3.1"
 	}
 }
+
