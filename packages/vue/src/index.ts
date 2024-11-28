@@ -1,5 +1,5 @@
 import '@queo/core/src/styles/main.scss';
-import { App } from 'vue';
+import type { App } from 'vue';
 import Button from './components/Button/Button.vue';
 
 export { Button };

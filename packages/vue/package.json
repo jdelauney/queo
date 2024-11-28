@@ -1,6 +1,6 @@
 {
 	"name": "@queo/vue",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"type": "module",
 	"private": false,
 	"main": "./dist/taylux.umd.js",
@@ -13,8 +13,8 @@
 			"require": "./dist/taylux.umd.js"
 		},
 		"./style.css": {
-			"import": "./dist/assets/react.css",
-			"require": "./dist/assets/react.css"
+			"import": "./dist/assets/vue.css",
+			"require": "./dist/assets/vue.css"
 		}
 	},
 	"files": [
