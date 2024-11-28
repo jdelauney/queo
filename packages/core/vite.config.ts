@@ -7,21 +7,24 @@ export default defineConfig({
 		dts({
 			include: ['src/**/*.ts'],
 			outDir: 'dist/types',
+			beforeWriteFile: (filePath, content) => {
+				if (content.trim() === '') {
+					return false;
+				}
+				return { filePath, content };
+			},
 		}),
 	],
 	build: {
 		lib: {
 			entry: resolve(__dirname, 'src/index.ts'),
-			name: 'taylux',
-		},
-		rollupOptions: {
-			input: resolve(__dirname, 'src/styles/main.scss'),
-			output: {
-				assetFileNames: 'assets/[name][extname]',
-			},
+			name: 'QueoCore',
+			fileName: 'index',
+			formats: ['es'],
 		},
 		sourcemap: false,
 		minify: true,
+		cssMinify: true,
 		cssCodeSplit: false,
 	},
 });
