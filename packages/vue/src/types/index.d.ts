@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-empty-object-type */
-import ButtonProps from '@taylux/core/src/types/button';
+import ButtonProps from '@tayluxui/core/src/types/button';
 import { DefineComponent } from 'vue';
 
 declare module 'taylux' {

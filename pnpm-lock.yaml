@@ -65,7 +65,7 @@ importers:
 
   packages/react:
     dependencies:
-      '@taylux/core':
+      '@tayluxui/core':
         specifier: workspace:*
         version: link:../core
       react:
@@ -87,7 +87,7 @@ importers:
 
   packages/vue:
     dependencies:
-      '@taylux/core':
+      '@tayluxui/core':
         specifier: workspace:*
         version: link:../core
       vue:
