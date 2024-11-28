@@ -1,20 +1,20 @@
 {
-	"name": "@taylux/react",
-	"version": "0.0.0",
-	"description": "",
+	"name": "@queo/react",
+	"version": "0.0.3",
+	"private": false,
 	"type": "module",
 	"main": "./dist/taylux.umd.js",
 	"module": "./dist/taylux.es.js",
 	"types": "./dist/types/index.d.ts",
 	"exports": {
 		".": {
+			"types": "./dist/types/index.d.ts",
 			"import": "./dist/taylux.es.js",
-			"require": "./dist/taylux.umd.js",
-			"types": "./dist/types/index.d.ts"
+			"require": "./dist/taylux.umd.js"
 		},
 		"./style.css": {
-			"import": "./dist/assets/style.css",
-			"require": "./dist/assets/style.css"
+			"import": "./dist/assets/react.css",
+			"require": "./dist/assets/react.css"
 		}
 	},
 	"files": [
@@ -33,7 +33,7 @@
 		"clean": "rm -rf dist .turbo"
 	},
 	"keywords": [],
-	"author": "",
+	"author": "Sebastien",
 	"license": "MIT",
 	"devDependencies": {
 		"@types/react": "^18.3.12",
@@ -43,10 +43,19 @@
 	"dependencies": {
 		"react": "^18.3.1",
 		"react-dom": "^18.3.1",
-		"@taylux/core": "workspace:*"
+		"@queo/core": "workspace:*"
 	},
 	"peerDependencies": {
 		"react": "^18.3.1",
 		"react-dom": "^18.3.1"
-	}
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Sebastienpanda/taylux.git"
+	},
+	"bugs": {
+		"url": "https://github.com/Sebastienpanda/taylux/issues"
+	},
+	"homepage": "https://github.com/Sebastienpanda/taylux#readme",
+	"description": ""
 }

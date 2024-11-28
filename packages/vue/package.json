@@ -1,20 +1,20 @@
 {
-	"name": "@taylux/vue",
-	"version": "0.0.1",
+	"name": "@queo/vue",
+	"version": "0.0.3",
 	"type": "module",
-	"description": "",
+	"private": false,
 	"main": "./dist/taylux.umd.js",
 	"module": "./dist/taylux.es.js",
 	"types": "./dist/types/index.d.ts",
 	"exports": {
 		".": {
+			"types": "./dist/types/index.d.ts",
 			"import": "./dist/taylux.es.js",
-			"require": "./dist/taylux.umd.js",
-			"types": "./dist/types/index.d.ts"
+			"require": "./dist/taylux.umd.js"
 		},
 		"./style.css": {
-			"import": "./dist/assets/style.css",
-			"require": "./dist/assets/style.css"
+			"import": "./dist/assets/react.css",
+			"require": "./dist/assets/react.css"
 		}
 	},
 	"files": [
@@ -33,11 +33,11 @@
 		"clean": "rm -rf dist .turbo"
 	},
 	"keywords": [],
-	"author": "",
+	"author": "Sebastien",
 	"license": "MIT",
 	"dependencies": {
 		"vue": "^3.5.13",
-		"@taylux/core": "workspace:*"
+		"@queo/core": "workspace:*"
 	},
 	"peerDependencies": {
 		"vue": "^3.5.13"
@@ -45,5 +45,14 @@
 	"devDependencies": {
 		"@vitejs/plugin-vue": "^5.2.1",
 		"vue-tsc": "^2.1.10"
-	}
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Sebastienpanda/taylux.git"
+	},
+	"bugs": {
+		"url": "https://github.com/Sebastienpanda/taylux/issues"
+	},
+	"homepage": "https://github.com/Sebastienpanda/taylux#readme",
+	"description": ""
 }

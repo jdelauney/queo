@@ -1,15 +1,26 @@
 {
-	"name": "@taylux/core",
-	"version": "0.0.1",
-	"description": "",
-	"main": "index.js",
+	"name": "@queo/core",
+	"version": "0.0.3",
+	"type": "module",
+	"private": false,
 	"scripts": {
-		"lint": "eslint \"src/**/*.{ts}\" --fix",
+		"build": "vite build",
+		"lint": "eslint \"src/**/*.ts\" --fix",
 		"typecheck": "tsc --noEmit",
 		"clean": "rm -rf dist .turbo"
 	},
-	"keywords": [],
+	"publishConfig": {
+		"access": "public"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Sebastienpanda/taylux.git"
+	},
 	"author": "",
-	"license": "ISC"
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Sebastienpanda/taylux/issues"
+	},
+	"homepage": "https://github.com/Sebastienpanda/taylux#readme",
+	"description": ""
 }
-
