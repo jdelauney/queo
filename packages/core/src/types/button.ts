@@ -12,14 +12,13 @@ export interface ButtonProps {
 	disabled?: boolean;
 
 	loading?: boolean;
-	loadingIcon?: string;
+	loadingIcon?: string | React.ReactNode;
 	loadingPosition?: IconPosition;
 
-	icon?: string;
+	icon?: string | React.ReactNode;
 	iconPosition?: IconPosition;
 
 	ariaLabel?: string;
-	loadingLabel?: string;
 
 	type?: 'button' | 'submit' | 'reset';
 }
