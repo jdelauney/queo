@@ -22,12 +22,7 @@ export function Button({
 }: ReactButtonProps) {
 	const hasOnlyIcon = !children && (!!icon || !!loadingIcon);
 
-	const classes = [
-		'taylux-btn',
-		`taylux-btn--${variant}`,
-		`taylux-btn--${size}`,
-		hasOnlyIcon ? 'taylux-btn--icon-only' : '',
-	]
+	const classes = ['queo-btn', `queo-btn--${variant}`, `queo-btn--${size}`, hasOnlyIcon ? 'queo-btn--icon-only' : '']
 		.filter(Boolean)
 		.join(' ');
 
@@ -47,24 +42,18 @@ export function Button({
 			onClick={handleClick}
 		>
 			{loading && hasOnlyIcon ? (
-				<span className="taylux-btn-icon-center" role="status">
-					{loadingIcon}
-				</span>
+				<span role="status">{loadingIcon}</span>
 			) : (
 				<>
 					{/* Loading icon left */}
 					{loading && loadingPosition === 'left' && (
-						<span className="taylux-btn-icon-left" role="status" aria-hidden="true">
+						<span role="status" aria-hidden="true">
 							{loadingIcon}
 						</span>
 					)}
 
 					{/* Regular icon left */}
-					{!loading && icon && (
-						<span className="taylux-btn-icon-left" aria-hidden="true">
-							{icon}
-						</span>
-					)}
+					{!loading && icon && <span aria-hidden="true">{icon}</span>}
 
 					{/* Content */}
 					{children && (
@@ -75,17 +64,13 @@ export function Button({
 
 					{/* Loading icon right */}
 					{loading && loadingPosition === 'right' && (
-						<span className="taylux-btn-icon-right" role="status" aria-hidden="true">
+						<span role="status" aria-hidden="true">
 							{loadingIcon}
 						</span>
 					)}
 
 					{/* Regular icon right */}
-					{!loading && iconRight && (
-						<span className="taylux-btn-icon-right" aria-hidden="true">
-							{iconRight}
-						</span>
-					)}
+					{!loading && iconRight && <span aria-hidden="true">{iconRight}</span>}
 				</>
 			)}
 		</button>
