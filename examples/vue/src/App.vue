@@ -2,12 +2,7 @@
 
 <template>
 	<div class="demo">
-		<Tag variant="primary">Hello tag</Tag>
-		<Tag variant="secondary">Hello tag</Tag>
-		<Tag variant="outline">Hello tag</Tag>
-		<Tag variant="ghost">Hello tag</Tag>
-		<Tag variant="danger">Hello tag</Tag>
-		<Tag isActive>Hello tag</Tag>
+		<Avatar src="https://picsum.photos/200/300" size="xl" online="online" />
 	</div>
 </template>
 
