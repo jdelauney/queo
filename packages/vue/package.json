@@ -1,16 +1,16 @@
 {
 	"name": "@queo/vue",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"type": "module",
 	"private": false,
-	"main": "./dist/taylux.umd.js",
-	"module": "./dist/taylux.es.js",
+	"main": "./dist/queo.umd.js",
+	"module": "./dist/queo.es.js",
 	"types": "./dist/types/index.d.ts",
 	"exports": {
 		".": {
 			"types": "./dist/types/index.d.ts",
-			"import": "./dist/taylux.es.js",
-			"require": "./dist/taylux.umd.js"
+			"import": "./dist/queo.es.js",
+			"require": "./dist/queo.umd.js"
 		},
 		"./style.css": {
 			"import": "./dist/assets/vue.css",

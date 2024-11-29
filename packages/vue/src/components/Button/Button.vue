@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ButtonProps } from '@queo/core/src/index';
+import { ButtonProps } from '@queo/core/src/types/button';
 import { computed, useSlots } from 'vue';
 
 const props = withDefaults(defineProps<ButtonProps>(), {
@@ -21,11 +21,11 @@ const emit = defineEmits<{
 }>();
 
 const classes = computed(() => [
-	'taylux-btn',
-	`taylux-btn--${props.variant}`,
-	`taylux-btn--${props.size}`,
+	'queo-btn',
+	`queo-btn--${props.variant}`,
+	`queo-btn--${props.size}`,
 	{
-		'taylux-btn--icon-only': hasOnlyIcon.value,
+		'queo-btn--icon-only': hasOnlyIcon.value,
 	},
 ]);
 </script>
@@ -40,47 +40,33 @@ const classes = computed(() => [
 		@click="emit('click', $event)"
 	>
 		<!-- Icon-only loading state -->
-		<span v-if="loading && hasOnlyIcon" class="taylux-btn-icon-center" role="status">
+		<span v-if="loading && hasOnlyIcon" role="status">
 			<slot name="loadingIcon"></slot>
 		</span>
 
 		<template v-else>
 			<!-- Left loading icon -->
-			<span
-				v-if="loading && loadingPosition === 'left'"
-				class="taylux-btn-icon-left"
-				role="status"
-				aria-hidden="true"
-			>
+			<span v-if="loading && loadingPosition === 'left'" role="status" aria-hidden="true">
 				<slot name="loadingIcon" />
 			</span>
 
 			<!-- Left icon -->
-			<span v-if="!loading && $slots.icon" class="taylux-btn-icon-left" aria-hidden="true">
+			<span v-if="!loading && $slots.icon" aria-hidden="true">
 				<slot name="icon" />
 			</span>
 
 			<!-- Button content -->
-			<span
-				v-if="$slots.default"
-				class="taylux-btn-content"
-				:class="{ 'sr-only': loading && !$slots.loadingIcon }"
-			>
+			<span v-if="$slots.default" class="queo-btn-content" :class="{ 'sr-only': loading && !$slots.loadingIcon }">
 				<slot />
 			</span>
 
 			<!-- Right loading icon -->
-			<span
-				v-if="loading && loadingPosition === 'right'"
-				class="taylux-btn-icon-right"
-				role="status"
-				aria-hidden="true"
-			>
+			<span v-if="loading && loadingPosition === 'right'" role="status" aria-hidden="true">
 				<slot name="loadingIcon" />
 			</span>
 
 			<!-- Right icon -->
-			<span v-if="!loading && $slots.iconRight" class="taylux-btn-icon-right" aria-hidden="true">
+			<span v-if="!loading && $slots.iconRight" aria-hidden="true">
 				<slot name="iconRight" />
 			</span>
 		</template>

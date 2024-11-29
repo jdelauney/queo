@@ -1,14 +1,12 @@
-.queo-btn {
-	display: flex;
+.queo-tag {
+	display: inline-flex;
 	align-items: center;
-	justify-content: center;
-	border-radius: var(--queo-radius);
-	font-weight: 500;
+	padding: 4px 8px;
+	border-radius: 4px;
+	font-size: 14px;
 	cursor: pointer;
+	user-select: none;
 	transition: background-color 300ms ease-in-out;
-	gap: 15px;
-
-	/* Variant colors */
 	&--primary {
 		background-color: var(--queo-primary);
 		color: white;
@@ -93,15 +91,9 @@
 		font-size: var(--queo-font-lg);
 	}
 
-	/* Disabled state */
-	&:disabled {
-		opacity: 0.5;
-		cursor: not-allowed;
-	}
-
-	/* Focus state */
-	&:focus {
-		outline: none;
-		box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+	/* Variant active */
+	&--active {
+		background-color: #4a90e2;
+		color: white;
 	}
 }

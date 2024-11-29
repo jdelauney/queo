@@ -9,14 +9,12 @@ export default defineConfig({
 		dts({
 			include: ['src/**/*.ts', 'src/**/*.vue'],
 			outDir: 'dist/types',
-			cleanVueFileName: true,
 		}),
 	],
 	build: {
 		lib: {
 			entry: resolve(__dirname, 'src/index.ts'),
-			name: 'taylux',
-			fileName: (format) => `taylux.${format}.js`,
+			fileName: (format) => `queo.${format}.js`,
 		},
 		sourcemap: false,
 		minify: true,
@@ -37,7 +35,7 @@ export default defineConfig({
 				},
 				{
 					format: 'umd',
-					name: 'tailux',
+					name: 'queo',
 					exports: 'named',
 					globals: {
 						vue: 'Vue',
