@@ -1,64 +1,64 @@
-.taylux-btn {
+.queo-btn {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	border-radius: var(--taylux-radius);
+	border-radius: var(--queo-radius);
 	font-weight: 500;
 	cursor: pointer;
-	transition: all 300ms ease-in-out;
+	transition: background-color 300ms ease-in-out;
 	gap: 15px;
 
 	/* Variant colors */
 	&--primary {
-		background-color: var(--taylux-primary);
+		background-color: var(--queo-primary);
 		color: white;
 
 		&:hover {
-			background-color: var(--taylux-primary-hover);
+			background-color: var(--queo-primary-hover);
 		}
 	}
 
 	&--secondary {
-		background-color: var(--taylux-secondary);
-		color: var(--taylux-tertiary);
+		background-color: var(--queo-secondary);
+		color: var(--queo-tertiary);
 
 		&:hover {
-			background-color: var(--taylux-secondary-hover);
+			background-color: var(--queo-secondary-hover);
 		}
 	}
 
 	&--tertiary {
-		background-color: var(--taylux-tertiary);
+		background-color: var(--queo-tertiary);
 		color: white;
 
 		&:hover {
-			background-color: var(--taylux-tertiary-hover);
+			background-color: var(--queo-tertiary-hover);
 		}
 	}
 
 	&--danger {
-		background-color: var(--taylux-danger);
+		background-color: var(--queo-danger);
 		color: white;
 
 		&:hover {
-			background-color: var(--taylux-danger-hover);
+			background-color: var(--queo-danger-hover);
 		}
 	}
 
 	&--outline {
 		background-color: transparent;
-		border: 2px solid var(--taylux-primary);
-		color: var(--taylux-primary);
+		border: 2px solid var(--queo-primary);
+		color: var(--queo-primary);
 
 		&:hover {
-			background-color: var(--taylux-secondary);
+			background-color: var(--queo-secondary);
 		}
 	}
 
 	&--danger-outline {
 		background-color: transparent;
-		border: 2px solid var(--taylux-danger);
-		color: var(--taylux-danger);
+		border: 2px solid var(--queo-danger);
+		color: var(--queo-danger);
 
 		&:hover {
 			background-color: rgba(239, 68, 68, 0.1);
@@ -66,31 +66,31 @@
 	}
 
 	&--ghost {
-		background-color: var(--taylux-ghost);
-		color: var(--taylux-tertiary);
+		background-color: var(--queo-ghost);
+		color: var(--queo-tertiary);
 
 		&:hover {
-			background-color: var(--taylux-ghost-hover);
+			background-color: var(--queo-ghost-hover);
 		}
 	}
 
 	/* Variant size */
 	&--sm {
-		height: var(--taylux-size-sm);
-		padding: var(--taylux-spacing-sm);
-		font-size: var(--taylux-font-sm);
+		height: var(--queo-size-sm);
+		padding: var(--queo-spacing-sm);
+		font-size: var(--queo-font-sm);
 	}
 
 	&--md {
-		height: var(--taylux-size-md);
-		padding: var(--taylux-spacing-md);
-		font-size: var(--taylux-font-md);
+		height: var(--queo-size-md);
+		padding: var(--queo-spacing-md);
+		font-size: var(--queo-font-md);
 	}
 
 	&--lg {
-		height: var(--taylux-size-lg);
-		padding: var(--taylux-spacing-lg);
-		font-size: var(--taylux-font-lg);
+		height: var(--queo-size-lg);
+		padding: var(--queo-spacing-lg);
+		font-size: var(--queo-font-lg);
 	}
 
 	/* Disabled state */
