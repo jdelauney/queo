@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ButtonProps } from '@queo/core/src/index';
+import { ButtonProps } from '@queo/core/src/types/button';
 import { computed, useSlots } from 'vue';
 
 const props = withDefaults(defineProps<ButtonProps>(), {

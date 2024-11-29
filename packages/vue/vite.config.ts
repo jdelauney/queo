@@ -9,7 +9,6 @@ export default defineConfig({
 		dts({
 			include: ['src/**/*.ts', 'src/**/*.vue'],
 			outDir: 'dist/types',
-			cleanVueFileName: true,
 		}),
 	],
 	build: {

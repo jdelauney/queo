@@ -1,5 +1,5 @@
 import '@queo/core/src/styles/main.scss';
-import plugin from '@tayluxui/vue';
+import plugin from '@queo/vue';
 import { createApp } from 'vue';
 import App from './App.vue';
 

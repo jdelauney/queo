@@ -9,9 +9,10 @@
 		"preview": "vite preview"
 	},
 	"dependencies": {
-		"vue": "^3.5.13",
 		"@queo/core": "workspace:*",
-		"@tayluxui/vue": "workspace:*"
+		"@queo/vue": "workspace:*",
+		"lucide-vue-next": "^0.462.0",
+		"vue": "^3.5.13"
 	},
 	"devDependencies": {
 		"@vitejs/plugin-vue": "^5.2.1",
@@ -20,4 +21,3 @@
 		"vue-tsc": "^2.1.10"
 	}
 }
-

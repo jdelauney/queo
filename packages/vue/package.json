@@ -27,7 +27,7 @@
 		"access": "public"
 	},
 	"scripts": {
-		"build": "vite build",
+		"build": "vite build --watch",
 		"lint": "eslint \"src/**/*.{ts,vue}\" --fix",
 		"typecheck": "tsc --noEmit",
 		"clean": "rm -rf dist .turbo"
