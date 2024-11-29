@@ -4,6 +4,7 @@ export interface ReactButtonProps extends ButtonProps {
 	children?: React.ReactNode;
 	onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
 	className?: string;
+	iconRight?: React.ReactNode;
 }
 
 export function Button({
@@ -14,7 +15,7 @@ export function Button({
 	loadingPosition = 'right',
 	children,
 	icon,
-	iconPosition,
+	iconRight,
 	loadingIcon,
 	onClick,
 	ariaLabel,
@@ -59,7 +60,7 @@ export function Button({
 					)}
 
 					{/* Regular icon left */}
-					{!loading && icon && iconPosition === 'left' && (
+					{!loading && icon && (
 						<span className="taylux-btn-icon-left" aria-hidden="true">
 							{icon}
 						</span>
@@ -80,9 +81,9 @@ export function Button({
 					)}
 
 					{/* Regular icon right */}
-					{!loading && icon && iconPosition === 'right' && (
+					{!loading && iconRight && (
 						<span className="taylux-btn-icon-right" aria-hidden="true">
-							{icon}
+							{iconRight}
 						</span>
 					)}
 				</>
