@@ -15,8 +15,7 @@ export default defineConfig({
 	build: {
 		lib: {
 			entry: resolve(__dirname, 'src/index.ts'),
-			name: 'taylux',
-			fileName: (format) => `taylux.${format}.js`,
+			fileName: (format) => `queo.${format}.js`,
 		},
 		rollupOptions: {
 			external: ['react', 'react-dom', '@queo/core'],
@@ -33,7 +32,7 @@ export default defineConfig({
 				},
 				{
 					format: 'umd',
-					name: 'taylux',
+					name: 'queo',
 					exports: 'named',
 					globals: {
 						react: 'React',
