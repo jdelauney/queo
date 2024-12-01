@@ -4,15 +4,14 @@
 	"private": true,
 	"type": "module",
 	"scripts": {
-		"build": "turbo  build",
-		"build:watch": "turbo watch build",
+		"build": "turbo watch build",
 		"dev": "turbo run dev",
 		"lint": "turbo run lint",
 		"test": "turbo run test",
 		"format": "prettier --write \"**/*.{ts,tsx,vue,md,json,css,scss}\"",
 		"format:check": "prettier --check \"**/*.{ts,tsx,vue,md,json,css,scss}\"",
 		"typecheck": "turbo run typecheck",
-		"postinstall": "husky && pnpm build"
+		"prepare": "husky"
 	},
 	"devDependencies": {
 		"@commitlint/cli": "^19.6.0",
